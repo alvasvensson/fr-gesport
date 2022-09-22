@@ -1,6 +1,6 @@
 ﻿
 
-string[] answers = {"1", "2", "3"};
+string[] answers = { "1", "2", "3" };
 
 string playAgain = "yes";
 while (playAgain == "yes")
@@ -16,7 +16,6 @@ while (playAgain == "yes")
 
     Console.WriteLine("Welcome to my quiz, whats your name?");
     name = Console.ReadLine();
-    
 
     //---------------------------------------
 
@@ -25,9 +24,10 @@ while (playAgain == "yes")
 
     string answer1 = Console.ReadLine();
 
-    while (!answers.Contains(answer1)) {
-    Console.WriteLine("Fel format, använd siffror");
-    answer1 = Console.ReadLine();
+    while (!answers.Contains(answer1))
+    {
+        Console.WriteLine("Fel format, använd siffror");
+        answer1 = Console.ReadLine();
     }
 
     if (answer1 == "2")
@@ -50,9 +50,10 @@ while (playAgain == "yes")
 
     answer2 = Console.ReadLine();
 
-    while (!answers.Contains(answer2)) {
-    Console.WriteLine("Fel format, använd siffror");
-    answer2 = Console.ReadLine();
+    while (!answers.Contains(answer2))
+    {
+        Console.WriteLine("Fel format, använd siffror");
+        answer2 = Console.ReadLine();
     }
 
     while (answer2 != "1")
@@ -79,9 +80,10 @@ while (playAgain == "yes")
 
     string answer3 = Console.ReadLine();
 
-    while (!answers.Contains(answer3)) {
-    Console.WriteLine("Fel format, använd siffror");
-    answer3 = Console.ReadLine();
+    while (!answers.Contains(answer3))
+    {
+        Console.WriteLine("Fel format, använd siffror");
+        answer3 = Console.ReadLine();
     }
 
     if (answer3 == "1")
@@ -123,7 +125,7 @@ while (playAgain == "yes")
     Console.WriteLine("Do you wanna play again?");
 
     playAgain = Console.ReadLine();
- 
- 
+
+
 
 }
